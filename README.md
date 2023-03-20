@@ -17,8 +17,10 @@ yc iam create-token
 
 ## Команды для выполнения
 
-- `terraform init`
-- `terraform plan`
-- `terraform apply --auto-approve`
-- `terraform output`
-- `terraform destroy --auto-approve`
+```bash
+terraform init
+terraform plan
+terraform apply --auto-approve
+terraform output
+terraform destroy --auto-approve
+```
