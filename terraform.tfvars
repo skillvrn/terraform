@@ -1,0 +1,3 @@
+iam_token = "t1.9euelZqcmpLNnZGVjY6Zmo2UyZSTne3rnpWamJONks2KmYuVz5KMjomckZDl9PcDRylf-e9VORLx3fT3ezgpX_nvVTkS8Q.v6akgKfIT2EUzvYzjAOma2_vILAAyl4AtOA2kJqsyHagYaEDRgw-_f_3rR9fvEECF1GrjWBKlBgXQlg1i4pKDQ"
+cloud_id = "b1g3jddf4nv5e9okle7p"
+folder_id = "b1g4v2q4j0dfegi3pmsc"
