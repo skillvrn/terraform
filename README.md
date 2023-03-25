@@ -2,10 +2,11 @@
 
 ## Авторизация на облаке
 
-Каждые 12 часов авторизация протухает из-за таймаута токена.
+Каждые 12 часов нужно пересоздавать TOKEN для доступа к сервисному аккаунту.
 Чтобы сгенерировать новый необходимо на локальной машине выполнить:
 
 ```
+yc init --federation-id <ID>
 yc iam create-token
 ```
 
@@ -15,12 +16,16 @@ yc iam create-token
 
 В файл meta.yml добавить свой ssh-ключ
 
+## terraform.tfstate
+
+Статус сохраняется в бакет S3 на Object Storage. Для доступа к нему, нужно использовать секретный ключ сервисного аккаунта.
+Данные прописывать на локальной машине, откуда происходит запуск terraform'а, в файл config.s3.tfbackend (добавлен в gitignore)
+
 ## Команды для выполнения
 
 ```bash
 terraform init
 terraform plan
 terraform apply --auto-approve
-terraform output
 terraform destroy --auto-approve
 ```
